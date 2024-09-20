@@ -1,0 +1,35 @@
+<html>
+<head>
+<link href="img/style.css" rel="stylesheet" />
+</head>
+    <body class="bg_iframe">
+
+        <h1 class="titulo">Consulta de Status dos Busca Preço</h1><div align=center><font color=red size=2>Pendente: Último Update de alguns servidores</font></div>
+        <table align=center border=0>
+            <tr>
+                <td>
+                    <form name="form1" action="buscapreco.php" method="POST" target="result">
+                        Loja <input size="10" type="text" name="numloja" id="numloja" /> <input type="submit" value="Checar"/>
+                    </form>
+                </td>
+                <td align=center valign=top colspan=2>
+                        <font size=1>Deixe vazio para<br>todas as Lojas!!!</font>
+                </td>
+                <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                <td>
+                    <form name="form2" action="lastupdate.php" method="POST" target="_self">
+                        <input type="submit" value="Atualizar"/>
+                    </form>
+                </td>
+                <td align=center valign=top colspan=2>
+                        <font size=1>Coletar no Servidor ECD a<br>atualização mais recente.</font>
+                </td>
+            </tr>
+        </table>
+        <center>
+            <iframe name="result" height=505 width=1120 src="" frameborder="0" scrolling="auto"></iframe>
+        </center>
+    </body>
+</html>

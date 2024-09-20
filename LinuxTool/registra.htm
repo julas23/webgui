@@ -1,0 +1,52 @@
+<html>
+<head>
+<link href="img/style.css" rel="stylesheet" />
+<script type="text/javascript">
+function validaCampo()
+{
+if(document.registra.email.value=="")
+	{
+	alert("O Campo E-MAIL é obrigatório!");
+	return false;
+	}
+
+else
+	if(document.registra.username.value=="")
+	    {
+	    alert("O campo USER é obrigatório!");
+	    return false;
+	    }
+    else	
+        if(document.registra.password.value=="")
+            {
+            alert("Digite uma senha!");
+            return false;
+            }
+        else
+            if(document.registra.ckpasswork.value=="")
+                {
+                alert("Confirme a Senha!");
+                return false;
+                }
+            else
+            return true;
+}
+</script>
+</head>
+<body font=courier-new>
+
+<div align = "center">
+    <div style = "width:300px; border: solid 1px #333333; background-color: white;" align = "left">
+        <table bgcolor=#333333 border=0 width=300><tr><td><div style = "color:#FFFFFF; padding:3px; "><b>Registro de usuário</b></div></td></tr></table>
+        <div style = "margin:30px">
+            <form name = registra id = registra action = "registra.php" method = "POST" onsubmit="return validaCampo(); return false;">
+                <label>E-mail:&nbsp;&nbsp;&nbsp;</label><input type = "text" id = "email" name = "email" class = "box"/><div style = 'display:inline;'></div><br /><br />
+                <label>User:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type = "text" id = "username" name = "username" class = "box"/><div style = 'display:inline;'></div><br /><br />
+                <label>Senha:&nbsp;&nbsp;&nbsp;&nbsp;</label><input type = "password" id = "password" name = "password" class = "box" /><div style = 'display:inline;'></div><br/><br />
+                <label>Confirma:&nbsp;</label><input type = "password" id = "ckpassword" name = "ckpassword" class = "box" /><div style = 'display:inline;'></div><br/><br />
+                <center><input type=submit value='Solicitar Acesso'><br /></center>
+            </form>
+        </div>
+    </div>
+</div>
+</body></html>

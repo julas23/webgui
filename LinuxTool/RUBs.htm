@@ -1,0 +1,15 @@
+<?php
+    include 'config.php';
+    include('session.php');
+    $username = $_GET['username'];
+    if (!$username) { header("Location:login.php"); }
+?>
+<html>
+<head>
+<link href="img/style.css" rel="stylesheet" />
+</head>
+    <body class="bg_iframe">
+        <table align=center><tr><td><h1 class="titulo">Checar RUBs: Espaço e Serviços</h1></td><td>&nbsp;&nbsp;</td><td><form name="form1" action="RUBs.php" method="POST" target="result"><input type="submit" value="Executar"/></form></td></tr></table>
+        <center><iframe name="result" height=550 width=1120 src="" frameborder="0" scrolling="auto"></iframe></center>
+    </body>
+</html>

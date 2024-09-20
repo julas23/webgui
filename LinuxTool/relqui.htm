@@ -1,0 +1,31 @@
+<html>
+<head>
+<link href="img/style.css" rel="stylesheet" />
+</head>
+<body class="bg_iframe">
+    <form name="form1" action="relqui.php" method="POST" onsubmit="return validaCampo(); return false;" target="result">
+        <table align=center border=0>
+            <tr>
+                <td align=left width=550><h1>Relat&oacute;rio Quinzenal - Diretor Ronaldo</h1></td>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td><div style='float:center;display:inline-block';><font size=1>Data Inicial (YYYYMMDD):</font><br>
+                    <div style='float:right;display:inline-block';><input size="20" type="text" name="datai" id="datai" /></div>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td><font size=1><div style='float:center;display:inline-block';>Data Final (YYYYMMDD):</font><br>
+						  <div style='float:right;display:inline-block';><input size="20" type="text" name="dataf" id="dataf" /></div>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;</td>
+                <td align="right">
+	                <input type="submit" value="Executar Query" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+<center>
+	<iframe name="result" height=545 width=1120 src="" frameborder="0" scrolling="auto"></iframe>
+</center>
+
+</body>
+</html>

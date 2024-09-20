@@ -1,0 +1,17 @@
+<html>
+<head>
+<link href="img/style.css" rel="stylesheet" />
+</head>
+<body class="bg_iframe">
+    <form name="form1" action="consprec.php" method="POST" onsubmit="return validaCampo(); return false;" target="result">
+        <table align=center border=0 width=1100>
+            <tr>
+                <td align=left width=500><h1>Consulta Pre&ccedil;o - ERP</h1></td>
+                <td><font size="3" color="#888888" face="sans-serif"><strong>Id do Produto: </strong></font></td>
+                <td align="right"><input size="40" type="text" name="produto" id="produto" /> <input type="submit" value="Executar Query" /></td>
+            </tr>
+        </table>
+        <center><iframe name="result" height=524 width=1120 src="" frameborder="0" scrolling="auto"></iframe></center>
+    </form>
+</body>
+</html>

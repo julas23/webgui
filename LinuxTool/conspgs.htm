@@ -1,0 +1,45 @@
+<html>
+<head>
+<link href="img/style.css" rel="stylesheet" />
+</head>
+    <body class="bg_iframe">
+
+        <h1 class="titulo">Checar PostGres - Queries, Consumo, Conexões</h1>
+        <table align=center>
+            <tr>
+                <td>
+                    <form name="form1" action="queryrunning.php" method="POST" onsubmit="return validaCampo(); return false;" target="result">
+                        <input type="submit" value="Queries Rodando"/>
+                    </form>
+                </td>
+                <td>
+                    <form name="form2" action="cacherate.php" method="POST" onsubmit="return validaCampo(); return false;" target="result">
+                        <input type="submit" value="Status do Cache"/>
+                    </form>
+                <td>
+                    <form name="form3" action="consindex.php" method="POST" onsubmit="return validaCampo(); return false;" target="result">
+                        <input type="submit" value="Checar Índices"/>
+                    </form>
+                </td>
+                <td>
+                    <form name="form4" action="idlequeries.php" method="POST" onsubmit="return validaCampo(); return false;" target="result">
+                        <input type="submit" value="Idle Queries"/>
+                    </form>
+                </td>
+                <td align=center>
+                    <form name="form5" action="listauso.php" method="POST" onsubmit="return validaCampo(); return false;" target="result">
+                         <input type="submit" value="Listar Conectados" />
+                    </form>
+                </td>
+                <td align=center width=450>
+                    <form name="form5" action="killquery.php" method="POST" onsubmit="return validaCampo(); return false;" target="result">
+                         PID Idle Query <input size="10" type="text" name="mataquery" id="mataquery" /> <input type="submit" value="Matar Query" />
+                    </form>
+                </td>                </td>
+            </tr>
+        </table>
+        <center>
+            <iframe name="result" height=524 width=1120 src="" frameborder="0" scrolling="auto"></iframe>
+        </center>
+    </body>
+</html>

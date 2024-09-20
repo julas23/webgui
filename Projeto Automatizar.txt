@@ -1,0 +1,91 @@
+Vizualizador de Logs
+Execu��es em abas internas
+Clicar tarefa inputa comando no GET para execu��o
+Execu��es cr�ticas solicitam confirma��o com explica��o e PEDEM SENHA para Confirma��o
+Recurso Auto-completar no commando
+Navegador Compilado com Proxy e URL Definitiva
+Diferentes camadas de privil�gios (ver viabilidade por questao de senha)
+
+Menu AppID Drop Down
+CAMADA WEB
+    SERVIDOR 01
+        Instancia 01  [#]
+
+
+Integrar Monitoramento DashBoard
+Repositorio de Scripts em BD
+
+1- Produzir um Shell Script com Menus
+
+2- Atrelar tarefas/comandos aos Menus
+
+3- Contruir uma arvore de diret�rios para administrar conteudo.
+	Ex.
+
+	+--56P
+	|   |
+	|   +-- pvmk7576
+	|   |      |
+	|   |      +-- Scripts
+	|   |      |
+	|   |      +-- Logs
+	|   |      |    |
+	|   |      |    +- STDERR
+	|   |      |    +- STDOUT
+	|   |      |
+	|   |      +-- Status
+	|   |
+	|   +-- pvmk7676
+	|   |      |
+	|   |      +-- Scripts
+	|   |      |
+	|   |      +-- Logs
+	|   |      |    |
+	|   |      |    +- STDERR
+	|   |      |    +- STDOUT
+	|   |      |
+	|   |      +-- Status
+	|   |
+	|   +-- pvmk7677
+	|
+	+--L9S
+
+4- Produzir um GUI de administra��o WEB Based, substituindo o Shell Script.
+
+5- Integrar uma instancia SSH dentro da GUI de administra��o para acompanhar os processos e interagir caso necessario.
+
+Modelo da GUI WEB Based.
+
++--------------------------------------------------------------------------------------------------------------------------------+
+|                                                   WEBS-OPS1 Administration GUI                                                 |
++----------------------------+--------------------------+------------------------------------------------------------------------+
+|[-] AppID 56P               | PVMKA469.corp.sprint.com |                                                                     [X]|
+|                            +--------------------------+------------------------------------------------------------------------+
+|    [-] -- pvmk7675         |                                                                                                   |
+|        [-] -- start    |>  |  ps701278@pvmka469.corp.sprint.com's password:                                                    |
+|        [-] -- stop     |>  |  Last login: Tue Sep  6 11:32:31 2011 from 10.238.15.216                                          |
+|        [-] -- Logs     |>  |                                                                                                   |
+|        [-] -- FS Full  |>  |  Sprint-installed Red Hat Enterprise Linux Thu May 26 14:21:11 CDT 2011                           |
+|        [-] -- shell    |>  |                                                                                                   |
+|                            |  ps701278@pvmka469                                                                                |
+|    [+] -- pvmk7676         |  /home/ps701278 $                                                                                 |
+|    [+] -- pvmk7677         |                                                                                                   |
+|    [+] -- pvmk7678         |                                                                                                   |
+|                            |                                                                                                   |
+|[-] AppID L9S               |                                                                                                   |
+|                            |                                                                                                   |
+|    [-] -- pvmka469         |                                                                                                   |
+|        [-] -- start    |>  |                                                                                                   |
+|        [-] -- stop     |>  |                                                                                                   |
+|        [-] -- Logs     |>  |                                                                                                   |
+|        [-] -- FS Full  |>  |                                                                                                   |
+|        [-] -- shell    |>  |                                                                                                   |
+|                            |                                                                                                   |
+|    [-] -- pvmka470         |                                                                                                   |
+|        [-] -- start    |>  |                                                                                                   |
+|        [-] -- stop     |>  |                                                                                                   |
+|        [-] -- Logs     |>  |                                                                                                   |
+|        [-] -- FS Full  |>  |                                                                                                   |
+|        [-] -- shell    |>  |                                                                                                   |
+|                            |                                                                                                   |
++----------------------------+---------------------------------------------------------------------------------------------------+

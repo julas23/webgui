@@ -1,0 +1,7 @@
+#!/usr/bin/expect
+
+set timeout 60
+
+spawn ssh root@[lindex $argv 0] "netstat -putan"
+
+interact

@@ -1,0 +1,116 @@
+body {
+	font-family:Tahoma,Arial;
+	font-size:10px;
+	color:#000000;
+	background:#FFFFFF;
+}
+
+hr {
+    color: #25BBB5;
+    height: 1px;
+    width: 120px;
+    text-align: center;
+	float:center;
+    border: solid thin #25BBB5;
+	margin-left:2px;
+	margin-right:4px;
+}
+
+a:link {
+	font-family:verdana;
+	font-size:10px;
+	color:darkblue;
+	text-decoration:none;
+}
+
+a:visited {
+	font-family:verdana;
+	font-size:10px;
+	color:darkblue;
+	text-decoration:none;
+}
+
+/*a:hover {
+	font-family:verdana;
+	font-size:10px;
+	color:lightblue;
+	text-decoration:inherit;
+}*/
+
+/* Fade */
+.hvr-fade {
+  width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  background-color: #dddddd;
+  color: red;
+  font-weight:bold;
+}
+
+h1 {
+	font-family:verdana;
+	font-size:20px;
+	color:grey;
+	text-decoration:none;
+}
+
+h2 {
+	font-family:verdana;
+	font-size:18px;
+	color:grey;
+	text-decoration:none;
+}
+
+#accordion {
+  list-style: none;
+  padding: 0;
+  margin-top:0px;
+  width:100%;
+  color:#000000;
+}
+#accordion li{
+  display: block;
+  background-color: #000000;
+  color: #FFFF00;
+  font: 10px/15px 'ColaborateBoldRegular', Arial, sans-serif bold;
+  letter-spacing: 0px;
+  padding:10px;
+  text-transform:uppercase;
+  margin:1px;
+  cursor: pointer;
+  list-style: none;
+}
+#accordion ul {
+  list-style: none;
+  padding: 0 0 0 0;
+  display: none;
+  color:#000000;
+}
+#accordion ul li{
+  font-weight: normal;
+  cursor: auto;
+  background-color: #fff;
+  padding: 0 0 0 7px;
+  color:#000000;
+}
+
+#accordion a {
+  text-decoration: none;
+}
+
+#accordion a:hover {
+  text-decoration: underline;
+}

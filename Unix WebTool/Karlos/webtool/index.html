@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>WebTool Prototype</title>
+		<link type="text/css" href="css/black-tie/jquery-ui-1.8.23.custom.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans:700' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+		<script type="text/javascript" src="js/ui-info.js"></script>
+	</head>
+	<body>
+		<!-- Tabs -->
+		<div id="header">
+		  <div class="app-name"><h1>WebTool Prototype</h1></div>
+		  <div class="logotype"><img src="img/header_logotypes.png" /></div>
+		</div>
+		<div id="content">
+				<div id="tabs">
+					<ul>
+						<li><a href="#tabs-1">Production</a></li>
+						<li><a href="#tabs-2">ORT</a></li>
+						<li><a href="#tabs-3">Test</a></li>
+						<li><a href="#tabs-4">Dev</a></li>
+						<li><a href="#tabs-5">Monitor</a></li>
+						<li><a href="#tabs-6">Wiki</a></li>
+					</ul>
+					<div id="tabs-1" class="top-menu"><ul><li class='active '><a href='#'><span>K8S</span></a></li><li><a href='#'><span>56DP</span></a></li><li><a href='#'><span>R8S</span></a></li><li><a href='#'><span>ME0</span></a></li></ul></div>
+					<div id="tabs-2" class="top-menu"><ul><li class='active '><a href='#'><span>K8S</span></a></li><li><a href='#'><span>56DP</span></a></li><li><a href='#'><span>R8S</span></a></li><li><a href='#'><span>ME0</span></a></li></ul></div>
+					<div id="tabs-3" class="top-menu"><ul><li class='active '><a href='#'><span>K8S</span></a></li><li><a href='#'><span>56DP</span></a></li><li><a href='#'><span>R8S</span></a></li><li><a href='#'><span>ME0</span></a></li></ul></div>
+					<div id="tabs-4" class="top-menu"><ul><li class='active '><a href='#'><span>K8S</span></a></li><li><a href='#'><span>56DP</span></a></li><li><a href='#'><span>R8S</span></a></li><li><a href='#'><span>ME0</span></a></li></ul></div>
+					<div id="tabs-5" class="top-menu"><ul><li class='active '><a href='#'><span>K8S</span></a></li><li><a href='#'><span>56DP</span></a></li><li><a href='#'><span>R8S</span></a></li><li><a href='#'><span>ME0</span></a></li></ul></div>
+					<div id="tabs-6" class="top-menu"><ul><li class='active '><a href='#'><span>K8S</span></a></li><li><a href='#'><span>56DP</span></a></li><li><a href='#'><span>R8S</span></a></li><li><a href='#'><span>ME0</span></a></li></ul></div>
+				</div>
+				<div id="env-content" class="ui-widget-content">
+				  <div class="shell-container">
+					  <div class="shell-title"><h1>Non-interactive shell</h1></div>
+					  <input type="text" class="prompt" value="ls -l" />
+					  <button>Run</button>
+					  <h2 class="shell-workdir"><b>Working dir:</b>&nbsp;<span><b>/home/user/webtool</b></span></h2>	
+					  <div class="shell">
+						<div class="output">
+							<p>Command output comes here</p>	
+						</div>
+					  </div>
+				   </div>
+				   			  <div class="shell-container">
+					  <div class="shell-title"><h1>Non-interactive shell</h1></div>
+					  <input type="text" class="prompt" value="ls -l" />
+					  <button>Run</button>
+					  <h2 class="shell-workdir"><b>Working dir:</b>&nbsp;<span><b>/home/user/webtool</b></span></h2>	
+					  <div class="shell">
+						<div class="output">
+							<p>Command output comes here</p>	
+						</div>
+					  </div>
+				   </div>
+				</div>
+				<div id="accordion-menu">
+					<ul id="accordion">
+						<li class="menu-header">Servers</li>
+						<ul class="sub-accordion">
+						    <h1><input class="web-trigger" type="checkbox" />&nbsp;Web</h1>
+							<li><a href="#"><input class="web-class" type="checkbox" />&nbsp;PKDS0191</a></li>
+							<li><a href="#"><input class="web-class" type="checkbox" />&nbsp;PKDS0190</a></li>
+							<li><a href="#"><input class="web-class" type="checkbox" />&nbsp;TKDS0191</a></li>
+						    <h1><input class="app-trigger" type="checkbox" />&nbsp;App</h1>
+							<li><a href="#"><input class="app-class" type="checkbox" />&nbsp;PKDS0191</a></li>
+							<li><a href="#"><input class="app-class" type="checkbox" />&nbsp;PKDS0190</a></li>
+							<li><a href="#"><input class="app-class" type="checkbox" />&nbsp;TKDS0191</a></li>
+						</ul>
+						<li class="menu-header">Commands</li>
+						<ul class="sub-accordion">
+							<li><a href="#">LS -L</a></li>
+							<li><a href="#">DF -H</a></li>
+							<li><a href="#">PS AUXXX</a></li>
+						</ul>
+					</ul>
+				</div>
+				<div id="show-menu">
+				</div>
+		</div>
+	</body>
+</html>
+
+

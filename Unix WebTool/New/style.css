@@ -1,0 +1,86 @@
+body {
+	font-family:Tahoma,Arial;
+	font-size:10px;
+	color:#000000;
+	background:#FFFFFF;
+}
+
+hr {
+    color: #25BBB5;
+    height: 1px;
+    width: 25px;
+    text-align: right;
+	float:left;
+    border: solid thin #25BBB5;
+	margin-left:2px;
+	margin-right:4px;
+}
+
+a:link {
+	font-family:verdana;
+	font-size:10px;
+	color:darkblue;
+	text-decoration:none;
+}
+
+a:hover {
+	font-family:verdana;
+	font-size:10px;
+	color:white;
+	text-decoration:inherit;
+}
+
+h1 {
+	font-family:verdana;
+	font-size:20px;
+	color:grey;
+	text-decoration:none;
+}
+
+h2 {
+	font-family:verdana;
+	font-size:18px;
+	color:grey;
+	text-decoration:none;
+}
+
+#accordion {
+  list-style: none;
+  padding: 0;
+  margin-top:0px;
+  width:100%;
+  color:#000000;
+}
+#accordion li{
+  display: block;
+  background-color: #000000;
+  color: #FFFF00;
+  font: 10px/15px 'ColaborateBoldRegular', Arial, sans-serif bold;
+  letter-spacing: 0px;
+  padding:10px;
+  text-transform:uppercase;
+  margin:1px;
+  cursor: pointer;
+  list-style: none;
+}
+#accordion ul {
+  list-style: none;
+  padding: 0 0 0 0;
+  display: none;
+  color:#000000;
+}
+#accordion ul li{
+  font-weight: normal;
+  cursor: auto;
+  background-color: #fff;
+  padding: 0 0 0 7px;
+  color:#000000;
+}
+
+#accordion a {
+  text-decoration: none;
+}
+
+#accordion a:hover {
+  text-decoration: underline;
+}

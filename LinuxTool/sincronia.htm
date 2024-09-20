@@ -1,0 +1,23 @@
+<html>
+<head>
+<link href="img/style.css" rel="stylesheet" />
+</head>
+<body class="bg_iframe">
+<table align=center border=0>
+    <tr>
+        <td width=350>
+            <h1 class="titulo">Sincronia entre os Bancos</h1>
+        </td>
+        <td width=750 align=right>
+        <form name="form1" action="sincronia.php" method="POST" onsubmit="return validaCampo(); return false;" target="result">
+            <font size="2" color="#888888" face="sans-serif"><strong>Data ANO-MÊS-DIA: </font></strong> <input size="20" type="text" name="dtanterior" id="dtanterior" />
+            <input type="submit" value="Executar Comparativo" />
+        </form>
+        </td>
+    </tr>
+</table>
+<center>
+    <iframe name="result" height=550 width=1120 src="" frameborder="0" scrolling="auto"></iframe>
+</center>
+</body>
+</html>

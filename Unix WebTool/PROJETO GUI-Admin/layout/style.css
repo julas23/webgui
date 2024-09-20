@@ -1,0 +1,42 @@
+body {
+	font-family:Tahoma,Arial;
+	font-size:13px;
+	color:black;
+	background:#FFFFFF;
+}
+
+/*a:link {
+	font-family:verdana;
+	font-size:13px;
+	color:darkblue;
+	text-decoration:none;
+	}
+
+a:hover {
+	font-family:verdana;
+	font-size:13px;
+	color:white;
+	background-color:grey;
+	text-decoration:none;
+	}
+*/
+
+h1 {
+	font-family:verdana;
+	font-size:20px;
+	color:grey;
+	text-decoration:none;
+	}
+
+h2 {
+	font-family:verdana;
+	font-size:18px;
+	color:grey;
+	text-decoration:none;
+	}
+	
+.style1 {
+	font-size: 8px;
+	font-family: Verdana;
+	color:grey;
+}

@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>UnixTool WebGUI - Admin Tool</title>
+	<script src="jquery.js" type="text/javascript"></script>
+	<link href="style.css" rel="stylesheet" />
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+			<style>
+			html { overflow-y: scroll }
+			body { font: 14px/24px 'Helvetica Neue', Arial, sans-serif; color: #333; width: 960px; margin: 30px auto 60px; background: #eee }
+			h1, dd { margin: 0 }
+			dt { font-weight: bold }
+			figure { display: block; width: 100%; height: 100%; margin: 0 }
+			figcaption { padding: 10px 15px; position: absolute; bottom: 20px; right: 30px; z-index: 3; background: black; background: rgba(0,0,0,0.7); color: white;
+				-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px }
+			.options h2 { margin: 30px 0 15px; text-shadow: 1px 1px 0 white; border-bottom: 2px solid #333; padding-bottom: 5px }
+			.options p { width: 48%; float: left; margin: 5px 0 }
+			p.heading, p.reset, .output { width: 100%; float: left; clear: left }
+			.output { position: relative }
+			.output h2 a { content: ''; position: absolute; top: 30px; right: 0; font-size: 14px; font-weight: normal; color: #333; text-decoration: none }
+			.output h2 a:hover { text-decoration: underline }
+			label { display: inline-block; width: 160px }
+			select { width: 160px; margin-right: 20px }
+			input[type='text'] { width: 40px }
+			textarea { width: 50%; height: 100px; font-family: monospace }
+			section { height: 100%; width: 100%; background: white; overflow-y: scroll }
+		</style>
+		<link rel="stylesheet" href="js/liteaccordion.css">
+		<script src="js/ga.js" async="" type="text/javascript"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery_002.js"></script>
+		<script src="js/liteaccordion.js"></script>        
+		<!--[if lt IE 9]>
+			<script>
+				document.createElement('figure');
+				document.createElement('figcaption');			
+			</script>
+		<![endif]-->
+        <!--[if lt IE 8]>
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
+        <![endif]-->				
+</head>
+<body>
+<table width="1400" border="0" bgcolor="#000000" cellspacing="0" align="center">
+<tr>
+  <td colspan="3" align="center" valign="top" background="img/bg_banner.png"><a href="shframe.html" target="shellframe"><img src="img/logo_banner.png" width="273" height="84" border="0" align="right"></a></td>
+</tr>
+<tr><td colspan="3" bgcolor="#000000" align="left">
+		<div class="liteAccordion basic" style="width: 1400px; height: 25px;" id="demo" align="left">
+		    <ol>
+				<li class="slide" name="one">
+				    <h2 class="selected" style="height: 25px; left: 0px; width: 25px;"><span>W</span></h2>
+				    <div style="width: 1000px; left: 0px; padding-left: 25px;">
+						<figure>
+							56P - R8S - K8S - L9S - 6AS - UHS - VWP - WWP - 1ZS - QKS - XYZ - ABC
+							<figcaption>Documentation</figcaption>
+						</figure>
+					</div>
+				</li>
+				<li class="slide" name="two">
+				    <h2 class="" style="height: 25px; left: 1080px; width: 25px;"><span>O</span></h2>
+				    <div style="width: 1000px; left: 1080px; padding-left: 25px;">
+						<figure>
+							Test1
+							<figcaption>Couldn't find an image of a Khajit thief! Fail!</figcaption>
+						</figure>
+					</div>
+				</li>
+				<li class="slide" name="three">
+				    <h2 class="" style="height: 25px; left: 1160px; width: 25px;"><span>T</span></h2>
+				    <div style="width: 1000px; left: 1160px; padding-left: 25px;">
+						<figure>
+							Test1
+							<figcaption>That's one angry looking red dude.</figcaption>
+						</figure>
+					</div>
+				</li>
+				<li class="slide" name="four">
+				    <h2 class="" style="height: 25px; left: 1240px; width: 25px;"><span>D</span></h2>
+				    <div style="width: 1000px; left: 1240px; padding-left: 25px;">
+						<figure>
+							Test1
+							<figcaption>Was fun for a couple of hours or so...</figcaption>
+						</figure>
+					</div>
+				</li>
+				<li class="slide" name="five">
+				    <h2 class="" style="height: 25px; left: 1320px; width: 25px;"><span>P</span></h2>
+				    <div style="width: 1000px; left: 1320px; padding-left: 25px;">
+						<figure>
+							Test1
+							<figcaption>Not as good as Hot Pursuit.</figcaption>
+						</figure>
+					</div>
+				</li>
+		    </ol>
+			<noscript>
+				<p>Please enable JavaScript to get the full experience.</p>
+			</noscript>
+		</div>
+	<script src="js/demosuite.js"></script>
+	<script>
+	    // analytics
+	    var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-17442910-1']);
+	    _gaq.push(['_trackPageview']);
+
+	    (function() {
+	        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	    })();
+	</script>		
+</td>
+</tr>
+<tr>
+  <td width="109" align="center" valign="top" bgcolor="#000000">
+      <ul id="accordion">
+		<li>TESTE A</li>
+		<ul>
+			<li>Teste A1</li>
+			<li>Teste A2</li>
+			<li>Teste A3</li>
+		</ul>
+		<li>TESTE B</li>
+		<ul>
+			<li>Teste B1</li>
+			<li>Teste B2</li>
+			<li>Teste B3</li>
+		</ul>
+		<li>TESTE C</li>
+		<ul>
+			<li>Teste C1</li>
+			<li>Teste C2</li>
+			<li>Teste C3</li>
+		</ul>
+		<li>TESTE D</li>
+		<ul>
+			<li>Teste D1</li>
+			<li>Teste D2</li>
+			<li>Teste D3</li>
+		</ul>
+	</ul>
+	<script type="text/javascript">
+    	$("#accordion > li").click(function() {
+    	if(false == $(this).next().is(':visible')) {
+    		$('#accordion > ul').slideUp(300);
+    	}
+    	$(this).next().slideToggle(300);
+	    });
+	</script>
+
+  </td>
+  <td width="1267" align="center" valign="middle" bgcolor="#FFFFFF">
+            <iframe name="shellframe" width="1260" height="750" src="shframe.html" frameborder="0" scrolling="auto">
+            Desculpe, mas é preciso checar se seu navegador suporta esta função. (iframe)
+            Sorry, check if your browser supports that type of action. (iframe)
+			</iframe>		
+  </td>
+  <td width="10" bgcolor="#000000"></td>
+</tr>
+<tr>
+    <td colspan="3" align="center" valign="middle" bgcolor="#000000">
+	  <font size="1" color="#FFCC00" face="Verdana, Arial, Helvetica, sans-serif">Designed by: <strong>Juliano Santos &amp; Guilherme Dagostini</strong> .:| IBM/SPRINT - WEBS-OPS1 |:.</font> </td>
+</tr>
+</table>
+</body>
+</html>

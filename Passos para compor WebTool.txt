@@ -1,0 +1,38 @@
+WebTool: Documentar instalação
+
+1. Perl
+
+Para poder compilar o Perl é necessário setar as variáveis de ambiente para apontar para os locais do MAKE e GCC
+	export PATH=/usr/sfw/bin:/usr/ccs/bin:/home/webadmin/unixWebToolRoot/perl/bin:$PATH
+		MAKE = /usr/ccs/bin/make
+		GCC  = /usr/sfw/bin/gcc
+		*PERL = /home/webadmin/unixWebToolRoot/perl/bin/perl
+
+	alias gcc='/usr/sfw/bin/gcc'
+	alias make='/usr/ccs/bin/make'
+	alias perl='/home/webadmin/unixWebToolRoot/perl/bin/perl'
+
+Após instalado o perl, é preciso setar o comando de instalação e compilação dos módulos:
+	perl Makefile.PL cc=gcc
+
+
+2. Apache
+
+Depois de baixado, descompactado o Apache é necessário compilar
+	./configure --prefix=/home/webadmin/unixWebToolRoot/apache
+
+Houve um erro pois faltava o módulo APR (Apache Portable Runtime)
+Foi baixado os arquivos APR e APR-Utils e colocados em PREFIX/APACHE/srclib para satisfazer a dependencia.
+
+Ocorreu um erro para PCRE (Perl Compatible Regular Expression)
+Foi baixado o Pacote PCRE e descompatado no PREFIX e compilado
+
+	./configure --prefix=/home/webadmin/unixWebToolRoot/pcre
+
+
+Como a variável de ambiente para compilar o Apache ainda estava falhando, foi necessário incorporar a declaração da variável ao comando de compilação,
+incluindo o parametro para especificar o caminho para o PCRE.
+
+env PATH=/usr/bin:/usr/sfw/bin:/usr/ccs/bin ./configure --prefix=/home/webadmin/unixWebToolRoot/apache --with-libpcre=/home/webadmin/unixWebToolRoot/pcre
+
+/home/webadmin/unixWebToolRoot/apache/bin/apachectl -k start

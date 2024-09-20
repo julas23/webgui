@@ -1,0 +1,16 @@
+#!/usr/bin/expect
+#
+# Autor: Juliano Alves dos Santos
+# Data: 28/05/2018
+#
+set timeout 60
+
+spawn ssh root@[lindex $argv 0] "echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDzQzxQ88575yiNgeN+tjBFKcbpRO/ZGm/WfWGPmYhVFIYX4zDSe4RpAgaKjuKFjQIa2QmDUQfSeMe6QjXu1z1a75HkvLeaYq2ADFo2NEcosg5x80xtiR3jQLjqBcGY6dXJXnCVdVZn84KlTGo7wOQYoJvFdRmelyBB8VMd1O7gbnt$
+' >> /root/.ssh/authorized_keys"
+
+expect "yes/no" {
+    send "yes\r"
+    expect "*?assword" { send "C0v48r4kT#\r" }
+    } "*?assword" { send "C0v48r4kT#\r" }
+
+interact

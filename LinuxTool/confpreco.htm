@@ -1,0 +1,43 @@
+<html>
+<head>
+<link href="img/style.css" rel="stylesheet" />
+</head>
+<body class="bg_iframe">
+    <table border=0 align=center width=1100>
+        <form name="PorLoja" action="confpreco.php" method="POST" target="result">
+        <tr>
+            <td width=150 align=center valign=top>
+                <h1>Conferir Preço - PDVs</h1>
+            </td>
+            <td width=150 align=center valign=top>
+                Código:
+            </td>
+            <td width=150 align=center valign=top>
+                <input size="20" type="text" name="codbar" id="codbar" />
+            </td>
+            <td width=150 align=center valign=top>
+                <input size="4" type="text" name="codloja" id="codloja" />
+            </td>
+            <td width=150 align=center valign=top>
+                <input type="submit" name="LJ02" value="Relatório por Loja"/>
+            </td>
+        </form>
+             <td width=150 align=center valign=top>
+                <form name="GERAL" action="confprecoGR.php" method="POST" target="result">
+                    <input type="submit" name="TODAS" value="Relatório na Tela"/>
+                </form>
+             <td width=150 align=center valign=top>
+                <form name="Email" action="confprecoEmail.php" method="POST" target="result">
+                    <input type="submit" name="TODAS" value="Relatório Por Email"/>
+                </form>
+             </td>
+             </td>
+        </tr>
+    </table>
+
+<center>
+	<iframe name="result" height=524 width=1120 src="" frameborder="0" scrolling="auto"></iframe>
+</center>
+
+</body>
+</html>

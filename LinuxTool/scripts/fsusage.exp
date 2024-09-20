@@ -1,0 +1,14 @@
+#!/usr/bin/expect
+#
+# Autor: Juliano Alves dos Santos
+# Data: 28/05/2018
+#
+set timeout 60
+
+spawn ssh root@[lindex $argv 0] "df -h |grep -v tmpfs"
+
+expect "yes/no" {
+    send "yes\r"
+    expect "*?assword" { send "C0v48r4kT#\r" }
+    } "*?assword" { send "C0v48r4kT#\r" }
+interact

@@ -1,0 +1,145 @@
+.qmmc
+.qmdivider {
+display:block;
+font-size:1px;
+border-width:0px;
+border-style:solid;
+position:relative;
+z-index:1;
+}
+
+.qmmc
+.qmdividery {
+float:left;
+width:0px;
+}
+
+.qmmc
+.qmtitle {
+display:block;
+cursor:default;
+white-space:nowrap;
+position:relative;
+z-index:1;
+}
+
+.qmclear {
+font-size:1px;
+height:0px;
+width:0px;
+clear:left;
+line-height:0px;
+display:block;
+float:none !important;
+}
+
+.qmmc {
+position:relative;
+zoom:1;
+z-index:9;
+}
+
+.qmmc a,
+.qmmc li {
+float:left;
+display:block;
+white-space:nowrap;
+position:relative;
+z-index:1;
+}
+
+.qmmc div a, .qmmc ul a, .qmmc ul li {float:none;}
+
+.qmsh div a {float:left;}
+
+.qmmc div{visibility:hidden;position:absolute;}
+
+.qmmc li {z-index:auto;}
+
+.qmmc ul {left:-10000px;position:absolute;z-index:10;}
+
+.qmmc, .qmmc ul {list-style:none;padding:0px;margin:0px;}
+
+.qmmc li a {float:none}
+
+.qmmc li:hover>ul{left:auto;}
+
+#qm1 ul {top:100%;}
+
+#qm1 ul li:hover>ul{top:0px;left:100%;}
+
+/*"""""""" (MAIN) Container""""""""*/	
+#qm1 {	
+	margin:0px 2px 10px;
+	background-color:#FFFFFF;
+	color:#000000;
+}
+
+/*"""""""" (MAIN) Items""""""""*/	
+#qm1 a {
+	padding:5px 5px 5px 5px;
+	background-color:#FFFFFF;
+	color:#000000;
+	font-family:Arial;
+	font-size:0.8em;
+	text-decoration:inherit;
+	border-width:0px;
+	border-style:none;
+	border-color:#DDDDDD;
+}
+
+/*"""""""" (MAIN) Hover State""""""""*/	
+#qm1 a:hover {	
+	margin:0px 0px 0px;
+	background-color:#FFFFFF;
+	text-decoration:underline;
+	color:#000000;
+}
+
+/*"""""""" (MAIN) Active State""""""""*/	
+body #qm1 .qmactive, body #qm1 .qmactive:hover	
+{
+	padding:5px;
+	margin:-1px 0px 0px;
+	background-color:#EFEFEF;
+	text-decoration:none;
+}
+
+/*"""""""" (SUB) Container""""""""*/	
+#qm1 div, #qm1 ul	
+{	
+	padding:5px;
+	margin:-1px 0px 0px;
+	background-color:#EEEEEE;
+	border-width:1px;
+	border-style:solid;
+	border-color:#CCCCCC;
+}
+
+/*"""""""" (SUB) Items""""""""*/	
+#qm1 div a, #qm1 ul a	
+{	
+	padding:2px 40px 2px 5px;
+	background-color:EEEEEE;
+	border-width:0px;
+	border-style:solid;
+	border-color:#CCCCCC;
+}
+
+/*"""""""" (SUB) Hover State""""""""*/	
+#qm1 div a:hover, #qm1 ul a:hover	
+{	
+	text-decoration:none;
+}
+
+/*"""""""" (SUB) Parent Items""""""""*/	
+#qm1 div .qmparent	
+{	
+	background-color:EEEEEE;
+}
+
+/*"""""""" (SUB) Active State""""""""*/	
+body #qm1 div .qmactive, body #qm1 div .qmactive:hover	
+{	
+	background-color:#FFFFFF;
+}

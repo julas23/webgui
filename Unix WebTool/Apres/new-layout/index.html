@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>UnixTool WebGUI - Admin Tool</title>
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<link href="style.css" rel="stylesheet" />
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+	<script src="js/liteaccordion.js"></script>
+</head>
+<body bgcolor="#000000">
+<table width="1400" border="0" bgcolor="#000000" cellspacing="0" align="center">
+<tr>
+  <td colspan="3" align="center" valign="top" background="img/bg_banner.png"><a href="shframe.html" target="shellframe"><img src="img/logo_banner.png" width="273" height="84" border="0" align="right"></a></td>
+</tr>
+<tr><td colspan="3">
+		<div class="liteAccordion basic" style="width:1400px;" id="demo" align="left">
+		    <ol>
+				<li class="slide" name="one">
+				    <h2 class=""><span>ORT</span></h2>
+				    <div>
+						<figure>
+							56P - R8S - K8S - L9S - 6AS - UHS - VWP - WWP - 1ZS - QKS - XYZ - ABC
+						</figure>
+					</div>
+				</li>
+				<li class="slide" name="two">
+				    <h2 class=""><span>TEST</span></h2>
+				    <div>
+						<figure>
+							56P - R8S - K8S - L9S - 6AS - UHS - VWP - WWP - 1ZS - QKS - XYZ - ABC
+						</figure>
+					</div>
+				</li>
+				<li class="slide" name="three">
+				    <h2 class=""><span>DEVEL</span></h2>
+				    <div>
+						<figure>
+							56P - R8S - K8S - L9S - 6AS - UHS - VWP - WWP - 1ZS - QKS - XYZ - ABC
+						</figure>
+					</div>
+				</li>
+				<li class="slide" name="four">
+				    <h2 class=""><span>PROD</span></h2>
+				    <div>
+						<figure>
+							56P - R8S - K8S - L9S - 6AS - UHS - VWP - WWP - 1ZS - QKS - XYZ - ABC
+						</figure>
+					</div>
+				</li>
+				<li class="slide" name="five">
+				    <h2 class=""><span>WIKI</span></h2>
+				    <div>
+						<figure>
+							56P - R8S - K8S - L9S - 6AS - UHS - VWP - WWP - 1ZS - QKS - XYZ - ABC
+						</figure>
+					</div>
+				</li>
+		    </ol>
+			<noscript>
+				Please enable JavaScript to get the full experience.
+			</noscript>
+		</div>
+	<script src="js/demosuite.js"></script>
+</td>
+</tr>
+<tr>
+  <td width="109" align="center" valign="top" bgcolor="#000000">
+      <ul id="accordion">
+		<li>TESTE A</li>
+		<ul>
+			<li>Teste A1</li>
+			<li>Teste A2</li>
+			<li>Teste A3</li>
+		</ul>
+		<li>TESTE B</li>
+		<ul>
+			<li>Teste B1</li>
+			<li>Teste B2</li>
+			<li>Teste B3</li>
+		</ul>
+		<li>TESTE C</li>
+		<ul>
+			<li>Teste C1</li>
+			<li>Teste C2</li>
+			<li>Teste C3</li>
+		</ul>
+		<li>TESTE D</li>
+		<ul>
+			<li>Teste D1</li>
+			<li>Teste D2</li>
+			<li>Teste D3</li>
+		</ul>
+	</ul>
+	<script type="text/javascript">
+    	$("#accordion > li").click(function() {
+    	if(false == $(this).next().is(':visible')) {
+    		$('#accordion > ul').slideUp(300);
+    	}
+    	$(this).next().slideToggle(300);
+	    });
+	</script>
+
+  </td>
+  <td width="1267" align="center" valign="middle" bgcolor="#FFFFFF">
+            <iframe name="shellframe" width="1260" height="638" src="shframe.html" frameborder="0" scrolling="auto">
+            Desculpe, mas é preciso checar se seu navegador suporta esta função. (iframe)
+            Sorry, check if your browser supports that type of action. (iframe)
+			</iframe>		
+  </td>
+  <td width="10" bgcolor="#000000"></td>
+</tr>
+<tr>
+    <td colspan="3" align="center" valign="middle" bgcolor="#000000">
+	  <font size="1" color="#FFCC00" face="Verdana, Arial, Helvetica, sans-serif">Designed by: <strong>Juliano Santos &amp; Guilherme Dagostini</strong> .:| IBM/SPRINT - WEBS-OPS1 |:.</font> </td>
+</tr>
+</table>
+</body>
+</html>

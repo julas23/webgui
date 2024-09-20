@@ -1,0 +1,176 @@
+body {
+	font-family:Courier New;
+	font-size:12px;
+	color:#000000;
+	background:#eeeeee;
+}
+
+label {
+    font-family:Courier New;
+    font-weight:bold;
+    width:100px;
+    font-size:14px;
+ }
+
+.box {
+	color:#000000;
+	background:#ffffff;
+    border: 1px black solid;
+    height: 25px;
+    width: 150px;
+}
+
+.bg_iframe {
+	color:#000000;
+	background:#ffffff;
+}
+
+.contorno {
+	color:#000000;
+	background:#ffffff;
+    border: 1px black solid;
+    width: 1300px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+hr {
+    color: #eee;
+    height: 1px;
+    width: 5px;
+    text-align: center;
+	float:center;
+    border: solid thin #25BBB5;
+	margin-left:2px;
+	margin-right:4px;
+}
+
+h1 {
+	font-family:Courier New;
+	font-size:18px;
+	color:black;
+	text-decoration:none;
+}
+
+h2 {
+	font-family:Courier New;
+	font-size:16px;
+	color:grey;
+	text-decoration:none;
+}
+
+h3 {
+	font-family:Courier New;
+	font-size:14px;
+	color:red;
+	text-decoration:none;
+}
+
+h4 {
+	font-family:Courier New;
+	font-size:12px;
+	color:orange;
+	text-decoration:none;
+}
+
+h5 {
+	font-family:Courier New;
+	font-size:8px;
+	color:green;
+	text-decoration:none;
+}
+
+h6 {
+	font-family:Courier New;
+	font-size:6px;
+	color:grey;
+	text-decoration:none;
+}
+
+textarea {
+	background: black;
+	font-size:	 14px;
+	color: white;
+    overflow:    auto;
+    overflow-y:  hidden;
+    overflow-x:  scroll;
+    overflow:    -moz-scrollbars-horizontal;
+}
+
+.iframe {
+	color:#000000;
+	background:#ffffff;
+    border: 1px black solid;
+    height: 625px;
+    width: 1150px;
+}
+
+a:link {
+	font-family:Courier New;
+	font-size:12px;
+	color:#000000;
+	text-decoration:none;
+    background-color: none;
+}
+
+a:hover {
+	font-family:Courier New;
+	font-size:12px;
+	color:#000000;
+	text-decoration:none;
+    font-weight:bold;
+    background-color: none;
+}
+
+a:visited {
+	font-family:Courier New;
+	font-size:12px;
+	color:#000000;
+	text-decoration:none;
+    background-color: none;
+}
+
+#accordion {
+  list-style: none;
+  padding: 0;
+  margin-top:4px;
+  width:100%;
+  color:#000;
+}
+
+#accordion li{
+  display: block;
+  background-color: #eee;
+  color: #000;
+  font: 10px/15px 'ColaborateBoldRegular', Arial, sans-serif bold;
+  letter-spacing: 0px;
+  padding:0px;
+  text-transform:none;
+  margin:0px;
+  margin-top:4px;
+  cursor: pointer;
+  list-style: none;
+}
+
+#accordion ul {
+  list-style: none;
+  padding: 0 0 0 0;
+  display: none;
+  color:#000;
+}
+
+#accordion ul li{
+  font-weight: normal;
+  cursor: auto;
+  background-color: #fff;
+  padding: 0 0 0 7px;
+  color:#000;
+}
+
+#accordion a {
+  text-decoration: none;
+}
+
+#accordion a:hover {
+  text-decoration: none;
+}
